@@ -182,15 +182,15 @@ body {
   letter-spacing: 0.04em;
 }
 
-.comp-board-item, .reports, .tasks, .board-item {
+.reports, .tasks, .board-item {
   padding: 16px;
   border-radius: 12px;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #B5B5BE;
-  background-color: #13131A;
+  color: #b5b5be;
+  background-color: #13131a;
 }
 
 button {
@@ -224,7 +224,6 @@ summary {
   display: flex;
   align-items: center;
   padding: 16px;
-  background-color: #1C1C24;
   box-shadow: 0px 1px 0px 0px #292932 inset;
 }
 
@@ -237,6 +236,8 @@ summary {
 
 .main-companies {
   display: grid;
+  justify-content: space-between;
+  align-items: flex-end;
   gap: 40px;
   padding: 16px;
   grid-template-areas: "welcome" "companies";
@@ -329,7 +330,7 @@ summary {
 .page-title-accent {
   display: block;
   margin-bottom: 8px;
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .co-workers {
@@ -362,13 +363,13 @@ summary {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .co-workers-container::-webkit-scrollbar-thumb {
-  background-color: #B5B5BE;
+  background-color: #b5b5be;
   background-clip: content-box;
   border: 5px solid transparent;
   border-radius: 100px;
 }
 .co-workers-container::-webkit-scrollbar-thumb:hover {
-  background-color: #F07F2E;
+  background-color: #f07f2e;
 }
 
 .co-workers-board {
@@ -404,7 +405,7 @@ summary {
   height: 20px;
   border-radius: 4px;
   border: 1px solid;
-  border-color: #92929D;
+  border-color: #92929d;
   cursor: pointer;
 }
 .co-workers-icon .plus {
@@ -412,7 +413,7 @@ summary {
   transition-property: opacity;
   transition-delay: 150ms;
   opacity: 0;
-  fill: #92929D;
+  fill: #92929d;
 }
 .co-workers-details:not([open]) .co-workers-icon .plus {
   opacity: 1;
@@ -422,7 +423,7 @@ summary {
   transition-property: opacity;
   transition-delay: 150ms;
   opacity: 0;
-  fill: #92929D;
+  fill: #92929d;
 }
 .co-workers-details[open] .co-workers-icon .minus {
   opacity: 1;
@@ -459,10 +460,10 @@ summary {
   height: 20px;
 }
 .controls-btn-icon.success {
-  fill: #82C43C;
+  fill: #82c43c;
 }
 .controls-btn-icon.error {
-  fill: #FC5A5A;
+  fill: #fc5a5a;
 }
 
 .co-workers-info {
@@ -474,11 +475,11 @@ summary {
 }
 
 .co-workers-position {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .co-workers-accept {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .co-workers-table {
@@ -486,7 +487,7 @@ summary {
 }
 .co-workers-table caption {
   margin-bottom: 36px;
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 .co-workers-table thead {
   position: sticky;
@@ -498,7 +499,7 @@ summary {
   position: relative;
   padding: 12px 20px;
   border-bottom-width: 1px;
-  color: #FAFAFB;
+  color: #fafafb;
 }
 .co-workers-table thead th:after {
   content: "";
@@ -508,13 +509,13 @@ summary {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #92929D;
+  background-color: #92929d;
 }
 .co-workers-table thead th:first-child {
   text-align: center;
 }
 .co-workers-table tbody {
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 .co-workers-table tbody td {
   position: relative;
@@ -530,7 +531,7 @@ summary {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #92929D;
+  background-color: #92929d;
 }
 .co-workers-table .thumb {
   width: 24px;
@@ -563,12 +564,12 @@ summary {
 
 .board-caption {
   margin-bottom: 8px;
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .board-details {
   margin-bottom: 20px;
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 
 .person {
@@ -597,7 +598,7 @@ summary {
 .board-tag {
   margin-bottom: auto;
   text-align: right;
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 
 .tasks {
@@ -609,10 +610,10 @@ summary {
 
 .tasks-title {
   margin-bottom: 36px;
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 .tasks-title span {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .tasks-list {
@@ -630,13 +631,13 @@ summary {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .tasks-list::-webkit-scrollbar-thumb {
-  background-color: #B5B5BE;
+  background-color: #b5b5be;
   background-clip: content-box;
   border: 5px solid transparent;
   border-radius: 100px;
 }
 .tasks-list::-webkit-scrollbar-thumb:hover {
-  background-color: #F07F2E;
+  background-color: #f07f2e;
 }
 
 .tasks-item {
@@ -645,7 +646,7 @@ summary {
   gap: 16px;
   padding: 16px 8px;
   border-top: 1px solid;
-  border-color: #92929D;
+  border-color: #92929d;
 }
 
 .tasks-checkbox {
@@ -663,17 +664,17 @@ summary {
   transition-property: fill, background-color, border-color;
   fill: transparent;
   border: 1px solid;
-  border-color: #92929D;
+  border-color: #92929d;
   border-radius: 4px;
 }
 .tasks-input:checked + .tasks-checkbox-icon {
-  fill: #FAFAFB;
-  background-color: #F07F2E;
+  fill: #fafafb;
+  background-color: #f07f2e;
   border-color: transparent;
 }
 .tasks-input:focus-visible + .tasks-checkbox-icon {
   outline: 2px solid;
-  outline-color: #92929D;
+  outline-color: #92929d;
   outline-offset: 2px;
 }
 
@@ -682,11 +683,11 @@ summary {
 }
 
 .tasks-heading {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .tasks-desc {
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 
 .tasks-btn {
@@ -694,7 +695,7 @@ summary {
   transition-property: outline;
   width: 20px;
   height: 20px;
-  color: #92929D;
+  color: #92929d;
   border-radius: 50%;
 }
 .tasks-btn:focus-visible {
@@ -714,10 +715,10 @@ summary {
 
 .reports-title {
   margin-bottom: 36px;
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 .reports-title span {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .reports-item {
@@ -752,7 +753,7 @@ summary {
 }
 
 .staff-caption {
-  color: #B5B5BE;
+  color: #b5b5be;
 }
 
 .reports-bar {
@@ -814,22 +815,22 @@ summary {
 }
 .reports-icon use {
   opacity: 0;
-  fill: #FAFAFB;
+  fill: #fafafb;
 }
 [data-status=up] .reports-icon {
-  background-color: #82C43C;
+  background-color: #82c43c;
 }
 [data-status=up] .reports-icon .up {
   opacity: 1;
 }
 [data-status=dash] .reports-icon {
-  background-color: #A461D8;
+  background-color: #a461d8;
 }
 [data-status=dash] .reports-icon .dash {
   opacity: 1;
 }
 [data-status=down] .reports-icon {
-  background-color: #FC5A5A;
+  background-color: #fc5a5a;
 }
 [data-status=down] .reports-icon .down {
   opacity: 1;
@@ -840,17 +841,16 @@ summary {
 }
 
 .comp-board {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+  justify-content: center;
 }
 
 .comp-board-item {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100%;
   padding: 24px;
   border-radius: 24px;
   background-color: #292932;
@@ -867,7 +867,7 @@ summary {
 
 .comp-board-caption {
   margin-bottom: 18px;
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .geo {
@@ -878,22 +878,22 @@ summary {
 }
 
 .icon-geo {
-  fill: #82C43C;
+  fill: #82c43c;
 }
 
 .discover-btn {
   width: max-content;
-  color: #F07F2E;
+  color: #f07f2e;
 }
 .discover-btn:hover, .discover-btn:focus {
-  color: #F15C27;
+  color: #f15c27;
 }
 .discover-btn:active {
-  color: #D14A00;
+  color: #d14a00;
 }
 
 .btn-frame-text {
-  color: #F07F2E;
+  color: #f07f2e;
 }
 
 .icon-companie {
@@ -905,7 +905,7 @@ summary {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #13131A;
+  background-color: #13131a;
 }
 
 .menu-list {
@@ -923,10 +923,10 @@ summary {
   padding: 16px 20px;
 }
 .menu-link:hover, .menu-link:focus {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 .menu-link.current {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 .menu-link.current::before {
   content: "";
@@ -938,7 +938,7 @@ summary {
   width: 4px;
   height: 32px;
   border-radius: 0px 100px 100px 0px;
-  background-color: #FAFAFB;
+  background-color: #fafafb;
 }
 
 .menu-icon {
@@ -954,7 +954,7 @@ summary {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  color: #F07F2E;
+  color: #f07f2e;
 }
 
 .menu-btn {
@@ -962,7 +962,7 @@ summary {
   align-items: center;
   gap: 10px;
   margin-right: auto;
-  color: #FAFAFB;
+  color: #fafafb;
 }
 .menu-btn-icon {
   fill: currentColor;
@@ -988,9 +988,9 @@ summary {
   min-width: 28px;
   height: 20px;
   padding: 0 10px;
-  color: #FAFAFB;
+  color: #fafafb;
   border-radius: 12px;
-  background-color: #FC5A5A;
+  background-color: #fc5a5a;
   opacity: 0;
 }
 .notification.is-notify {
@@ -1004,7 +1004,7 @@ summary {
   justify-content: center;
   min-width: 20px;
   min-height: 20px;
-  color: #92929D;
+  color: #92929d;
 }
 .notification-btn-icon {
   fill: currentColor;
@@ -1017,11 +1017,11 @@ summary {
   display: block;
   width: 8px;
   height: 8px;
-  background-color: #F07F2E;
+  background-color: #f07f2e;
   border-radius: 50%;
 }
 .notification-btn[data-notify=true]::after {
-  background-color: #FC5A5A;
+  background-color: #fc5a5a;
 }
 
 .search-field {
@@ -1029,11 +1029,11 @@ summary {
   transition-property: width, color;
   display: inline-flex;
   align-items: center;
-  color: #92929D;
+  color: #92929d;
   overflow: hidden;
 }
 .search-field:focus-within {
-  color: #FAFAFB;
+  color: #fafafb;
 }
 
 .search-icon {
@@ -1051,27 +1051,27 @@ summary {
   min-width: 96px;
   padding: 4px 8px;
   text-align: center;
-  color: #FAFAFB;
+  color: #fafafb;
   border-radius: 20px;
-  background-color: #FC5A5A;
+  background-color: #fc5a5a;
 }
 
 .badge-warning {
   min-width: 96px;
   padding: 4px 8px;
   text-align: center;
-  color: #FAFAFB;
+  color: #fafafb;
   border-radius: 20px;
-  background-color: #A461D8;
+  background-color: #a461d8;
 }
 
 .badge-success {
   min-width: 96px;
   padding: 4px 8px;
   text-align: center;
-  color: #FAFAFB;
+  color: #fafafb;
   border-radius: 20px;
-  background-color: #82C43C;
+  background-color: #82c43c;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1087,13 +1087,13 @@ summary {
   .reports-item {
     gap: 32px;
   }
-  .comp-board-item {
-    min-width: 343px;
+  .comp-board {
+    grid-template-columns: repeat(2, minmax(343px, 1fr));
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .comp-board-item, .reports, .tasks, .board-item {
+  .reports, .tasks, .board-item {
     padding: 24px;
   }
   .page {
@@ -1106,6 +1106,7 @@ summary {
     grid-area: sidebar;
   }
   .header {
+    background-color: #1c1c24;
     grid-area: header;
     padding: 26px 36px;
     justify-content: space-between;
@@ -1124,15 +1125,12 @@ summary {
   .tasks-list {
     margin-right: -14px;
   }
-  .comp-board-item {
-    min-width: 359px;
-  }
   .menu {
-    background-color: #1C1C24;
+    background-color: #1c1c24;
   }
   .logo {
     padding: 16px 20px;
-    background-color: #1C1C24;
+    background-color: #1c1c24;
   }
   .menu-btn {
     display: none;
@@ -1152,13 +1150,13 @@ summary {
     max-height: 400px;
     padding: 24px;
     margin-bottom: 32px;
-    background-color: #1C1C24;
+    background-color: #1c1c24;
   }
   .co-workers-title {
     margin-bottom: 36px;
   }
   .co-workers-table thead {
-    background-color: #1C1C24;
+    background-color: #1c1c24;
   }
   .co-workers-table thead th:after {
     background-color: #292932;
@@ -1167,7 +1165,10 @@ summary {
     background-color: #292932;
   }
   .board-item {
-    background-color: #1C1C24;
+    background-color: #1c1c24;
+  }
+  .comp-board {
+    grid-template-columns: repeat(3, minmax(359px, 1fr));
   }
 }
 
@@ -1178,8 +1179,7 @@ summary {
     border-radius: 12px;
   }
   .comp-board-item {
-    width: 359px;
-    background-color: #1C1C24;
+    background-color: #1c1c24;
   }
 }
 
