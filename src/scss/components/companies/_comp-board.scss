@@ -1,0 +1,104 @@
+@use "../../utils/placeholders";
+@use "../../utils/variables" as var;
+@use "../../utils/functions" as fn;
+@use "../../utils/mixins" as mx;
+
+
+.comp-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.comp-board-item { 
+    @extend %section-frame;
+    
+        flex-grow: 1;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: 100%;        
+        padding: 24px;
+        border-radius: 24px;        
+    
+        background-color: fn.get-color("dark-tertiary");
+
+        @include mx.mq("md") {
+            min-width: 343px;            
+        }
+
+        @include mx.mq("lg") {
+            min-width: 359px;  
+        }
+    
+        @include mx.mq("xxl") {
+            width: 359px;           
+            background-color: fn.get-color("dark-secondary");
+        }
+    
+        &.hide {
+            display: none;
+        }
+}
+
+.comp-board-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.comp-board-caption {
+    @extend %accent-text;
+
+    margin-bottom: 18px;
+    color: fn.get-color("light-primary");
+}
+
+.board-companie {}
+
+.geo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.geo-thumb {
+    // padding-right: 8px;
+}
+
+.icon-geo {
+    fill: fn.get-color("success");    
+}
+
+.geo-caption {}
+
+.discover-btn {
+    width: max-content;
+    color: fn.get-color("accent-primary");
+        &:hover,
+        &:focus {
+            color: fn.get-color("accent-secondary");            
+        }
+
+        &:active {
+            color: fn.get-color("accent-tertiary");
+        }
+}
+
+.btn {}
+
+.btn--frame {}
+
+.btn-frame-text {
+    color: fn.get-color("accent-primary");
+}
+
+.board-right {}
+
+.icon-companie {
+    fill: fn.get-color("light");
+    stroke: fn.get-color("light");
+}

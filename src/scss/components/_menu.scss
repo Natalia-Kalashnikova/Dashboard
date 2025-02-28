@@ -5,15 +5,21 @@
 
 .menu {
   position: relative;
-  width: 100%;
+  width: 100%;  
   height: 100%;
 
   background-color: fn.get-color('dark-primary');
+  
+  @include mx.mq('lg') {
+    background-color: fn.get-color("dark-secondary");
+  }
 
   @include mx.mq('lg', 'max') {
     @include mx.ease('fast', transform);
     max-width: 248px;
     transform: translateX(-100%);
+
+   
 
     .sidebar.is-open & {
       transform: translateX(0);

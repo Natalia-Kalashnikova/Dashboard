@@ -1,0 +1,18 @@
+@use '../../utils/placeholders';
+@use '../../utils/variables' as var;
+@use '../../utils/functions' as fn;
+@use '../../utils/mixins' as mx;
+
+.companies {
+  grid-area: companies;
+
+  @include mx.mq('xxl') {
+    padding: 20px;
+    background-color: fn.get-color('dark-tertiary');
+    border-radius: 12px;
+  }
+}
+
+.companies-board {
+//   justify-content: center;
+}

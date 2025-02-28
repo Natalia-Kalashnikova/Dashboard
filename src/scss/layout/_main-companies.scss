@@ -1,0 +1,40 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
+
+.main-companies {
+    display: grid;
+        gap: 40px;    
+        padding: 16px;
+
+        grid-template-areas:
+            "welcome"
+            "companies";   
+
+    // @include mx.mq("md") {
+    //     grid-gap: 36px 20px;
+    //     padding: 31px;
+    //     max-width: 76px;
+
+    //     grid-template-columns: repeat(2, minmax(343px, 1fr));
+    //     grid-template-areas:
+    //         "welcome welcome"
+    //         "companies companies";            
+    // }
+
+       
+    // @include mx.mq("lg") {  
+    //     grid-template-columns: repeat(3, minmax(343px, 1fr));
+    //     grid-template-areas:
+    //         "welcome welcome welcome"
+    //         "companies companies companies";           
+    // }
+
+    // @include mx.mq("xl") {
+    //     grid-template-columns: repeat(3, minmax(359px, auto));
+    //     grid-template-areas:
+    //         "welcome welcome welcome"
+    //         "companies companies companies";
+    // }
+}
