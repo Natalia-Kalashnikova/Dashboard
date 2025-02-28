@@ -1,104 +1,85 @@
-@use "../../utils/placeholders";
-@use "../../utils/variables" as var;
-@use "../../utils/functions" as fn;
-@use "../../utils/mixins" as mx;
-
+@use '../../utils/placeholders';
+@use '../../utils/variables' as var;
+@use '../../utils/functions' as fn;
+@use '../../utils/mixins' as mx;
 
 .comp-board {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
+  justify-content: center;
+
+  @include mx.mq('md') {
+    grid-template-columns: repeat(2, minmax(343px, 1fr));
+  }
+
+  @include mx.mq('xl') {
+    grid-template-columns: repeat(3, minmax(359px, 1fr));
+  }
 }
 
-.comp-board-item { 
-    @extend %section-frame;
-    
-        flex-grow: 1;
-    
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+.comp-board-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-        height: 100%;        
-        padding: 24px;
-        border-radius: 24px;        
-    
-        background-color: fn.get-color("dark-tertiary");
+  padding: 24px;
+  border-radius: 24px;
 
-        @include mx.mq("md") {
-            min-width: 343px;            
-        }
+  background-color: fn.get-color('dark-tertiary');
 
-        @include mx.mq("lg") {
-            min-width: 359px;  
-        }
-    
-        @include mx.mq("xxl") {
-            width: 359px;           
-            background-color: fn.get-color("dark-secondary");
-        }
-    
-        &.hide {
-            display: none;
-        }
+  @include mx.mq('xxl') {
+    background-color: fn.get-color('dark-secondary');
+  }
+
+  &.hide {
+    display: none;
+  }
 }
 
 .comp-board-name {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .comp-board-caption {
-    @extend %accent-text;
+  @extend %accent-text;
 
-    margin-bottom: 18px;
-    color: fn.get-color("light-primary");
+  margin-bottom: 18px;
+  color: fn.get-color('light-primary');
 }
-
-.board-companie {}
 
 .geo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 32px;
-}
-
-.geo-thumb {
-    // padding-right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
 }
 
 .icon-geo {
-    fill: fn.get-color("success");    
+  fill: fn.get-color('success');
 }
-
-.geo-caption {}
 
 .discover-btn {
-    width: max-content;
-    color: fn.get-color("accent-primary");
-        &:hover,
-        &:focus {
-            color: fn.get-color("accent-secondary");            
-        }
+  width: max-content;
+  color: fn.get-color('accent-primary');
+  &:hover,
+  &:focus {
+    color: fn.get-color('accent-secondary');
+  }
 
-        &:active {
-            color: fn.get-color("accent-tertiary");
-        }
+  &:active {
+    color: fn.get-color('accent-tertiary');
+  }
 }
-
-.btn {}
-
-.btn--frame {}
 
 .btn-frame-text {
-    color: fn.get-color("accent-primary");
+  color: fn.get-color('accent-primary');
 }
 
-.board-right {}
-
 .icon-companie {
-    fill: fn.get-color("light");
-    stroke: fn.get-color("light");
+  fill: fn.get-color('light');
+  stroke: fn.get-color('light');
 }

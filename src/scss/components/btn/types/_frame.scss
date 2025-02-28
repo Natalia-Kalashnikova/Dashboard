@@ -1,32 +1,19 @@
 @if index($btn-types, frame) {
+  /* == Frame == */
+  .btn--frame {
+    border: 1px solid #f07f2e;
 
-    /* == Frame == */
-    .btn--frame {
-        border: 1px solid #f07f2e;
-
-        &:active {
-            border: 1px solid #d14a00;
-        }
-
-        // @media (hover: hover) {
-
-        //     &:hover,
-        //     &:focus {
-        //         color: #f15c27;
-        //         border: 1px solid #f15c27;                
-        //     }
-        // }
-
-            
-
-        &:hover,
-        &:focus {            
-            border: 1px solid #f15c27;
-        }
-            
-
-        &[disabled] {
-            background-color: rgba(#b5b5be, 0.5);
-        }
+    &:active {
+      border: 1px solid #d14a00;
     }
+
+    &:hover,
+    &:focus {
+      border: 1px solid #f15c27;
+    }
+
+    &[disabled] {
+      background-color: rgba(#b5b5be, 0.5);
+    }
+  }
 }

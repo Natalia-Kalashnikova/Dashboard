@@ -3,18 +3,17 @@
 @use '../utils/functions' as fn;
 @use '../utils/mixins' as mx;
 
-.logo{
-    @extend %main-title;
+.logo {
+  @extend %main-title;
 
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 20px;
-    color: fn.get-color("accent-primary");
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  color: fn.get-color('accent-primary');
 
-    @include mx.mq("lg"){
-        padding: 16px 20px;
-        background-color: fn.get-color("dark-secondary");
-    }
+  @include mx.mq('lg') {
+    padding: 16px 20px;
+    background-color: fn.get-color('dark-secondary');
+  }
 }
-
