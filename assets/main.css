@@ -854,6 +854,11 @@ summary {
   padding: 24px;
   border-radius: 24px;
   background-color: #292932;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease-in-out;
+}
+.comp-board-item:hover, .comp-board-item:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
 }
 .comp-board-item.hide {
   display: none;
