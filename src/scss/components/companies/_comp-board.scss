@@ -28,9 +28,16 @@
   border-radius: 24px;
 
   background-color: fn.get-color('dark-tertiary');
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease-in-out;
 
   @include mx.mq('xxl') {
     background-color: fn.get-color('dark-secondary');
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25)
   }
 
   &.hide {
